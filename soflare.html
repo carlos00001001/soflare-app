@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solflare</title>
+  <link rel="stylesheet" href="soflare.css">
+  <script src="soflare.js" defer></script>
+</head>
+<body>
+
+<header class="overall-header">
+  <!-- LOGO -->
+  <a href="#" class="nav-logo">
+    <svg width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="100" height="100" rx="22" fill="#FFE843" />
+      <g fill="#0A0B0D">
+        <path d="M72.5 28.5L64.2 23.8L53.8 31.2L49.5 28.1L43.8 26.8L38.2 28.3C30.8 30.3 25.1 36.3 23.8 43.8C22.2 52.8 28.2 60.8 37.1 62.3C40.6 62.9 44.1 62.4 47.3 61.1L38.2 67.5L29.5 61.2L20 68.1L13.2 79.1L14.5 71.7L50.2 75.1L56.2 76.5L62.1 74.8C69.8 72.6 75.5 66.2 76.6 58.2C78.0 48.7 71.5 40.5 62.1 39.2C59.0 38.8 55.9 39.2 53.0 40.3L62.1 33.9L72.5 28.5ZM39.8 38.1C42.8 37.3 46.0 38.0 48.4 39.8L35.8 48.8C34.6 44.5 36.1 39.1 39.8 38.1ZM60.8 65.1C57.6 66.0 54.2 65.1 51.8 63.2L64.4 54.2C65.6 58.5 64.2 64.1 60.8 65.1Z"/>
+      </g>
+    </svg>
+  </a>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="main-nav">
+    <ul class="nav-list">
+      <!-- 1. PRODUCT -->
+      <li class="nav-item">
+        <a href="#product" class="nav-trigger">
+          Product 
+          <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+        </a>
+        <div class="dropdown-panel">
+          <div class="dropdown-content">
+            <a href="#overview">Overview</a>
+            <a href="#essentials">Essentials</a>
+            <a href="#security">Security</a>
+            <a href="#trading">Trading</a>
+            <a href="#staking">Staking</a>
+            <a href="#cards">Cards</a>
+            <a href="#perps">Perps <span class="badge-new">NEW</span></a>
+            <a href="#shield" class="nav-link">Solana Shield Hardware Wallet</a>
+            <a href="#magic" class="nav-link">Magic AI Assistant</a>
+          </div>
+          <div class="dropdown-footer">
+            <a href="#download" class="footer-link">15th November 2026 Solana Breakpoint London &rarr;</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 2. TOKEN PRICES -->
+      <li class="nav-item">
+        <a href="#token-prices" class="nav-trigger">Token Prices</a>
+      </li>
+
+      <!-- 3. RESOURCES -->
+      <li class="nav-item">
+        <a href="#resources" class="nav-trigger">
+          Resources 
+          <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+        </a>
+        <div class="dropdown-panel">
+          <div class="dropdown-content">
+            <a href="#overview">Overview</a>
+            <a href="#company-updates">Company Updates</a>
+            <a href="#inside-solflare">Inside Solflare</a>
+            <a href="#crypto-101">Crypto 101</a>
+            <a href="#app-guides">App Guides</a>
+            <a href="#faqs">FAQs</a>
+            <a href="#glossary">Glossary</a>
+          </div>
+          <div class="dropdown-footer">
+            <a href="#download" class="footer-link">15th November 2026 Solana Breakpoint London &rarr;</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 4. EXPLORE SOLANA -->
+      <li class="nav-item">
+        <a href="#explore" class="nav-trigger">
+          Explore Solana 
+          <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+        </a>
+        <div class="dropdown-panel">
+          <div class="dropdown-content">
+            <a href="#overview">Overview</a>
+            <a href="#ecosystem">Ecosystem</a>
+            <a href="#news">News</a>
+            <a href="#events">Events</a>
+          </div>
+          <div class="dropdown-footer">
+            <a href="#download" class="footer-link">15th November 2026<br>Solana Breakpoint London &rarr;</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- RIGHT ACTION BUTTONS -->
+  <div class="nav-actions">
+    <!-- LANGUAGE BUTTON (HIDDEN ON MOBILE) -->
+    <button class="lang-btn desktop-only" aria-label="Select Language">
+      <span class="lang-btn__label">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m5 8 6 6"/>
+          <path d="m4 14 6-6 2 3"/>
+          <path d="M2 5h12"/>
+          <path d="M7 2h1"/>
+          <path d="m22 22-5-10-5 10"/>
+          <path d="M14 18h6"/>
+        </svg>
+      </span>
+      <span class="lang-btn__label lang-btn__label--hover">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m5 8 6 6"/>
+          <path d="m4 14 6-6 2 3"/>
+          <path d="M2 5h12"/>
+          <path d="M7 2h1"/>
+          <path d="m22 22-5-10-5 10"/>
+          <path d="M14 18h6"/>
+        </svg>
+      </span>
+    </button>
+
+    <!-- GET EXTENSION BUTTON (HIDDEN ON MOBILE) -->
+    <a href="#extension" class="c-button c-button--white desktop-only">
+      <span class="c-button__label">
+        <span>Get extension</span>
+      </span>
+      <span class="c-button__label c-button__label--hover">
+        <span>Get extension</span>
+      </span>
+    </a>
+
+    <!-- DOWNLOAD BUTTON (YELLOW ON ALL SCREENS) -->
+    <a href="#download" class="c-button c-button--yellow">
+      <span class="c-button__label">
+        <span>Download now</span>
+      </span>
+      <span class="c-button__label c-button__label--hover">
+        <span>Download now</span>
+      </span>
+    </a>
+
+    <!-- HAMBURGER MENU TOGGLE (2 LINES, MOBILE ONLY) -->
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
+  </div>
+</header>
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-menu" id="mobileMenu">
+  <nav class="mobile-nav">
+    <a href="#product" class="mobile-nav__link">Product</a>
+    <a href="#token-prices" class="mobile-nav__link">Token Prices</a>
+    <a href="#resources" class="mobile-nav__link">Resources</a>
+    <a href="#explore" class="mobile-nav__link">Explore Solana</a>
+  </nav>
+  <div class="mobile-actions">
+    <a href="#extension" class="c-button c-button--yellow" style="width: 100%;">
+      <span class="c-button__label"><span>Get extension</span></span>
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main>
+  <section class="hero-section" id="heroSection">
+  <div class="hero-card" id="heroCard">
+    
+    <!-- STEP 01 CONTENT -->
+    <div class="hero-step step-1 is-active" data-step="1">
+      <div class="hero-content">
+        <span class="hero-eyebrow">THE POWER IS IN YOUR HANDS</span>
+        <h1 class="hero-title">Liberate your<br>finances</h1>
+        <p class="hero-description">
+          From live market updates to trend detection, Solflare has all the tools you need to trade and stake successfully.
+        </p>
+      <!-- HERO SECTION BUTTONS FOR ALL 3 STEPS -->
+<div class="hero-buttons">
+  <!-- Download Solflare Button -->
+  <a href="#download" class="hero-btn hero-btn--white">
+    <span class="hero-btn-wrapper">
+      <span class="hero-btn-label">
+        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="6" y="2" width="12" height="20" rx="3"/>
+          <line x1="12" y1="18" x2="12.01" y2="18"/>
+        </svg>
+        <span>Download Solflare</span>
+      </span>
+      <span class="hero-btn-label hero-btn-label--hover">
+        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="6" y="2" width="12" height="20" rx="3"/>
+          <line x1="12" y1="18" x2="12.01" y2="18"/>
+        </svg>
+        <span>Download Solflare</span>
+      </span>
+    </span>
+  </a>
+
+  <!-- Get Extension Button -->
+  <a href="#extension" class="hero-btn hero-btn--black">
+    <span class="hero-btn-wrapper">
+      <span class="hero-btn-label">
+        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" fill="#4CAF50"/>
+          <path d="M12 2a10 10 0 0 1 8.66 5H12z" fill="#EA4335"/>
+          <path d="M20.66 7A10 10 0 0 1 12 22l4.33-7.5z" fill="#FBBC05"/>
+          <path d="M12 22a10 10 0 0 1-8.66-15H12z" fill="#34A853"/>
+          <circle cx="12" cy="12" r="5" fill="#FFFFFF"/>
+          <circle cx="12" cy="12" r="3.8" fill="#1A73E8"/>
+        </svg>
+        <span>Get extension</span>
+      </span>
+      <span class="hero-btn-label hero-btn-label--hover">
+        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" fill="#4CAF50"/>
+          <path d="M12 2a10 10 0 0 1 8.66 5H12z" fill="#EA4335"/>
+          <path d="M20.66 7A10 10 0 0 1 12 22l4.33-7.5z" fill="#FBBC05"/>
+          <path d="M12 22a10 10 0 0 1-8.66-15H12z" fill="#34A853"/>
+          <circle cx="12" cy="12" r="5" fill="#FFFFFF"/>
+          <circle cx="12" cy="12" r="3.8" fill="#1A73E8"/>
+        </svg>
+        <span>Get extension</span>
+      </span>
+    </span>
+  </a>
+</div>
+      </div>
+      <div class="phone-backdrop">
+        <video class="phone-video" autoplay loop muted playsinline>
+          <source src="home-liberate-your-finances-1080 (1).mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-pagination">
+        <div class="pagination-line"></div>
+        <button class="step-btn is-active" data-step="1"><span>01</span></button>
+        <button class="step-btn" data-step="2"><span>02</span></button>
+        <button class="step-btn" data-step="3"><span>03</span></button>
+      </div>
+    </div>
+
+    <!-- STEP 02 CONTENT -->
+    <div class="hero-step step-2" data-step="2">
+      <div class="hero-content">
+        <span class="hero-eyebrow">THE POWER IS IN YOUR HANDS</span>
+        <h1 class="hero-title">Keep your<br>valuables safe</h1>
+        <p class="hero-description">
+          Putting your coins and NFTs in Solflare means securing them in the safest crypto Stronghold. Your security is our sacred principle.
+        </p>
+       <!-- HERO SECTION BUTTONS FOR ALL 3 STEPS -->
+<div class="hero-buttons">
+  <!-- Download Solflare Button -->
+  <a href="#download" class="hero-btn hero-btn--white">
+    <span class="hero-btn-wrapper">
+      <span class="hero-btn-label">
+        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="6" y="2" width="12" height="20" rx="3"/>
+          <line x1="12" y1="18" x2="12.01" y2="18"/>
+        </svg>
+        <span>Download Solflare</span>
+      </span>
+      <span class="hero-btn-label hero-btn-label--hover">
+        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="6" y="2" width="12" height="20" rx="3"/>
+          <line x1="12" y1="18" x2="12.01" y2="18"/>
+        </svg>
+        <span>Download Solflare</span>
+      </span>
+    </span>
+  </a>
+
+  <!-- Get Extension Button -->
+  <a href="#extension" class="hero-btn hero-btn--black">
+    <span class="hero-btn-wrapper">
+      <span class="hero-btn-label">
+        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" fill="#4CAF50"/>
+          <path d="M12 2a10 10 0 0 1 8.66 5H12z" fill="#EA4335"/>
+          <path d="M20.66 7A10 10 0 0 1 12 22l4.33-7.5z" fill="#FBBC05"/>
+          <path d="M12 22a10 10 0 0 1-8.66-15H12z" fill="#34A853"/>
+          <circle cx="12" cy="12" r="5" fill="#FFFFFF"/>
+          <circle cx="12" cy="12" r="3.8" fill="#1A73E8"/>
+        </svg>
+        <span>Get extension</span>
+      </span>
+      <span class="hero-btn-label hero-btn-label--hover">
+        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" fill="#4CAF50"/>
+          <path d="M12 2a10 10 0 0 1 8.66 5H12z" fill="#EA4335"/>
+          <path d="M20.66 7A10 10 0 0 1 12 22l4.33-7.5z" fill="#FBBC05"/>
+          <path d="M12 22a10 10 0 0 1-8.66-15H12z" fill="#34A853"/>
+          <circle cx="12" cy="12" r="5" fill="#FFFFFF"/>
+          <circle cx="12" cy="12" r="3.8" fill="#1A73E8"/>
+        </svg>
+        <span>Get extension</span>
+      </span>
+    </span>
+  </a>
+</div>
+      </div>
+      <div class="phone-backdrop">
+        <video class="phone-video" autoplay loop muted playsinline>
+          <source src="home-maximum-security-1080 (1).mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-pagination">
+        <div class="pagination-line"></div>
+        <button class="step-btn" data-step="1"><span>01</span></button>
+        <button class="step-btn is-active" data-step="2"><span>02</span></button>
+        <button class="step-btn" data-step="3"><span>03</span></button>
+      </div>
+    </div>
+
+    <!-- STEP 03 CONTENT -->
+    <div class="hero-step step-3" data-step="3">
+      <div class="hero-content">
+        <span class="hero-eyebrow">THE POWER IS IN YOUR HANDS</span>
+        <h1 class="hero-title">Protect what's<br>yours</h1>
+        <p class="hero-description">
+          Secure your finances with our tap-to-sign Solana hardware wallet, the ultimate in confidence and control.
+        </p>
+      <!-- HERO SECTION BUTTONS FOR ALL 3 STEPS -->
+<div class="hero-buttons">
+  <!-- Download Solflare Button -->
+  <a href="#download" class="hero-btn hero-btn--white">
+    <span class="hero-btn-wrapper">
+      <span class="hero-btn-label">
+        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="6" y="2" width="12" height="20" rx="3"/>
+          <line x1="12" y1="18" x2="12.01" y2="18"/>
+        </svg>
+        <span>Download Solflare</span>
+      </span>
+      <span class="hero-btn-label hero-btn-label--hover">
+        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="6" y="2" width="12" height="20" rx="3"/>
+          <line x1="12" y1="18" x2="12.01" y2="18"/>
+        </svg>
+        <span>Download Solflare</span>
+      </span>
+    </span>
+  </a>
+
+  <!-- Get Extension Button -->
+  <a href="#extension" class="hero-btn hero-btn--black">
+    <span class="hero-btn-wrapper">
+      <span class="hero-btn-label">
+        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" fill="#4CAF50"/>
+          <path d="M12 2a10 10 0 0 1 8.66 5H12z" fill="#EA4335"/>
+          <path d="M20.66 7A10 10 0 0 1 12 22l4.33-7.5z" fill="#FBBC05"/>
+          <path d="M12 22a10 10 0 0 1-8.66-15H12z" fill="#34A853"/>
+          <circle cx="12" cy="12" r="5" fill="#FFFFFF"/>
+          <circle cx="12" cy="12" r="3.8" fill="#1A73E8"/>
+        </svg>
+        <span>Get extension</span>
+      </span>
+      <span class="hero-btn-label hero-btn-label--hover">
+        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" fill="#4CAF50"/>
+          <path d="M12 2a10 10 0 0 1 8.66 5H12z" fill="#EA4335"/>
+          <path d="M20.66 7A10 10 0 0 1 12 22l4.33-7.5z" fill="#FBBC05"/>
+          <path d="M12 22a10 10 0 0 1-8.66-15H12z" fill="#34A853"/>
+          <circle cx="12" cy="12" r="5" fill="#FFFFFF"/>
+          <circle cx="12" cy="12" r="3.8" fill="#1A73E8"/>
+        </svg>
+        <span>Get extension</span>
+      </span>
+    </span>
+  </a>
+</div>
+      </div>
+      <div class="phone-backdrop">
+        <div class="phone-container">
+          <video class="phone-video" autoplay loop muted playsinline>
+            <source src="Solflare - Google Chrome 2026-10-04 23-28-39.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="hero-pagination">
+        <div class="pagination-line"></div>
+        <button class="step-btn" data-step="1"><span>01</span></button>
+        <button class="step-btn" data-step="2"><span>02</span></button>
+        <button class="step-btn is-active" data-step="3"><span>03</span></button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION 2: STATS BANNER -->
+<section class="stats-section">
+<div class="card card-left yellow-stats-card">
+  <div class="stat-item">
+    <h3 class="stat-number">★4.84</h3>
+    <p class="stat-label">Best Rated on App Store</p>
+  </div>
+  
+  <div class="stat-item">
+    <h3 class="stat-number">$16,187,984M</h3>
+    <p class="stat-label">Funds Managed with Solflare</p>
+  </div>
+
+  <div class="stat-item">
+    <h3 class="stat-number">3M+</h3>
+    <p class="stat-label">Active Users</p>
+  </div>
+</div>
+  <div class="revolution-header">
+    <span class="revolution-eyebrow">INDEPENDENCE IN YOUR HANDS</span>
+    <h2 class="revolution-title">A revolution in financial freedom</h2>
+  </div>
+</section>
+<!-- GSAP SCRIPTS ADDED HERE (MUST BE BEFORE YOUR SCRIPT.JS) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- YOUR JS FILE -->
+  <script src="script.js"></script>
+
+  <div class="grid-container">
+  <!-- Direct Child 1 (Left Column) -->
+  <div class="card card-left">
+    <div class="optical-1">
+      <video class="hero-video" autoplay loop muted playsinline>
+        <source src="shield-home-1080.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <!-- Direct Child 2 (Right Column) -->
+  <div class="card card-right">
+    <div class="writeup-1">
+      <p class="section-label">Founding the new world</p>
+      <p class="section-body">
+        <span class="highlight-text">Solana</span> is the fastest-growing blockchain ecosystem in DeFi and Web3, with SOL as its currency. Famed for its speed, near-zero fees, and memecoins, it’s also home to a digital community building a more secure, lucrative, and fun new world.
+      </p>
+    </div>
+  </div>
+</div>
+<br>
+ <div class="grid-container">
+  <!-- Direct Child 1 (Left Column) -->
+  <div class="card card-left">
+    <div class="optical-1">
+      <video class="hero-video" autoplay loop muted playsinline>
+        <source src="key-1080.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <!-- Direct Child 2 (Right Column) -->
+  <div class="card card-right">
+    <div class="writeup-1">
+      <p class="section-label">Keys to the new world</p>
+      <p class="section-body">
+       Your Solflare wallet is your all-access pass to Solana. It’s a secure way to trade coins, stake SOL, and explore a whole new world of Solana-based apps. The power is in your hands.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="own-the">
+  <p class="own1">
+Own the upside. And the downside.
+  </p>
+  <h2 class="own2">Trade crypto perpetual futures on Solana</h2>
+</div>
+ <div class="perps-grid-container">
+
+  <!-- LEFT COLUMN: TEXT + BUTTON -->
+  <div class="perps-card-text">
+    <p class="perps-label">SOLFLARE PERPS ON SOLANA</p>
+    <p class="perps-body">
+      Go long or short on Solana perps for SOL, BTC, ETH and more, powered by Phoenix Trade’s orderbook. Trade directly from your self-custody wallet. Your USDC never leaves your Solflare wallet, no bridging required.
+    </p>
+
+    <a href="#perps" class="custom-btn perps-btn">
+      <span class="hero-btn-wrapper">
+        <span class="hero-btn-label">
+          <span>Explore Solflare Perps</span>
+        </span>
+        <span class="hero-btn-label hero-btn-label--hover">
+          <span>Explore Solflare Perps</span>
+        </span>
+      </span>
+    </a>
+  </div>
+  
+
+  <!-- RIGHT COLUMN: ORANGE VIDEO CONTAINER -->
+  <div class="perps-card-media">
+    <video class="perps-video" autoplay loop muted playsinline>
+      <source src="home-solflare-perps-on-solana-1080.mp4" type="video/mp4">
+    </video>
+  </div>
+
+<!-- SECTION HEADING -->
+<div class="own-the">
+  <p class="own1">CLAIM YOUR POWER. TAP YOUR WAY TO GLORY!</p>
+  <h2 class="own2">From chain to checkout with legendary rewards</h2>
+</div>
+
+<!-- 2-COLUMN GRID SECTION -->
+<div class="debit-grid-container">
+
+  <!-- LEFT COLUMN: PURPLE CARD WITH VIDEO -->
+  <div class="debit-card-media">
+    <video class="debit-video" autoplay loop muted playsinline>
+      <source src="home-maximum-security-1080 (1).mp4" type="video/mp4">
+    </video>
+  </div>
+
+<!-- 1. DEBIT CARD SECTION -->
+<div class="debit-grid-container">
+  <div class="debit-card-media">
+    <video class="debit-video" autoplay loop muted playsinline>
+      <source src="home-maximum-security-1080 (1).mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="debit-card-text">
+    <h2 class="debit-title">First true self-custody debit card</h2>
+    <p class="debit-body">
+      On chain. In store. The Solflare Card enables you to spend $USDC directly from your wallet. Powered by Mastercard and accepted at 100M+ merchants worldwide.
+    </p>
+    <a href="#debit-card" class="custom-btn debit-btn">Get Solflare Card now</a>
+  </div>
+</div>
+<!-- 2. FEATURES / ASSETS SECTION -->
+<section class="assets-section">
+  <div class="features-badge">FEATURES</div>
+  <div class="assets-container">
+    <h2 class="assets-main-title">Make every asset an asset</h2>
+  </div>
+
+  <div class="assets-grid">
+    <div class="asset-card">
+      <div class="card-media bg-pink">
+        <img src="download 1.1.png" alt="Quick Transfer">
+      </div>
+      <span class="card-subheading">QUICK TRANSFER</span>
+      <h3 class="card-title">Send & receive Solana assets</h3>
+    </div>
+
+    <div class="asset-card">
+      <div class="card-media bg-blue">
+        <img src="download 1.2.png" alt="Get Coins">
+      </div>
+      <span class="card-subheading">GET COINS</span>
+      <h3 class="card-title">Buy crypto within wallet</h3>
+    </div>
+
+    <div class="asset-card">
+      <div class="card-media bg-grey">
+        <img src="download.png" alt="Personalized Gallery">
+      </div>
+      <span class="card-subheading">PERSONALIZED GALLERY</span>
+      <h3 class="card-title">Buy, collect and sell NFTs</h3>
+    </div>
+
+    <div class="asset-card">
+      <div class="card-media bg-orange">
+        <img src="download 2.png" alt="Explore Solana">
+      </div>
+      <span class="card-subheading">DEFI. GAMES. EXCHANGES.</span>
+      <h3 class="card-title">Explore Solana securely</h3>
+    </div>
+  </div>
+
+  <div class="assets-btn-container">
+    <a href="#start" class="btn-start-strong">Start strong</a>
+  </div>
+</section>
+
+<!-- 2. SOLFLARE PERPS & CARD SECTION -->
+<section class="perps-section">
+  <h2 class="perps-main-title">Trade crypto perpetual futures on Solana</h2>
+
+  <div class="perps-grid-container">
+    <div class="perps-card-text">
+      <p class="perps-label">SOLFLARE PERPS ON SOLANA</p>
+      <p class="perps-body">
+        Go long or short on Solana perps for SOL, BTC, ETH and more, powered by Phoenix Trade’s orderbook. Trade directly from your self-custody wallet. Your USDC never leaves your Solflare wallet, no bridging required.
+      </p>
+      <a href="#perps" class="custom-btn perps-btn">Explore Solflare Perps</a>
+    </div>
+
+    <div class="perps-card-media">
+      <video class="perps-video" autoplay loop muted playsinline>
+        <source src="home-solflare-perps-on-solana-1080.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+</main>
+</body>
+</html>
